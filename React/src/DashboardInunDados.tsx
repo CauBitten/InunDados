@@ -537,7 +537,7 @@ const InunDadosDashboard = () => {
                                 {mockGeoJsonF2 && (
                                     <GeoJSON
                                         data={mockGeoJsonF2}
-                                        pointToLayer={(feature, latlng) => {
+                                        pointToLayer={(_feature, latlng) => {
                                             return L.circleMarker(latlng, {
                                                 radius: 8,
                                                 fillColor: colors.burntYellow, // Pontos em amarelo queimado
